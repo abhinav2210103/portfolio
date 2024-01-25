@@ -55,21 +55,21 @@ function App() {
           <img src={Symbol} alt='Logo' />
         </div>
         <ul className='md:flex hidden gap-6 mr-20 text-[1.5rem] font-semibold justify-center items-center'>
-          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8'>Home</li>
-          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8'>About</li>
-          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8'>Skills</li>
-          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8'>Projects</li>
-          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8'>Contact</li>
+          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Home</li>
+          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>About</li>
+          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Skills</li>
+          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Projects</li>
+          <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Contact</li>
         </ul>
         <div className="md:hidden flex items-center" onClick={toggleMenu}>
           <FaBars size="1.5em" />
         </div>
         <ul className={`lg:hidden ${showMenu ? "flex-col" : "hidden"} flex-col justify-center items-center absolute w-full top-20 right-0 bg-white border-2 border-sky-600`}>
-          <li className='flex justify-center text-[1.5rem] hover:text-sky-600'>Home</li>
-          <li className='flex justify-center text-[1.5rem] hover:text-sky-600'>About</li>
-          <li className='flex justify-center text-[1.5rem] hover:text-sky-600'>Skills</li>
-          <li className='flex justify-center text-[1.5rem] hover:text-sky-600'>Projects</li>
-          <li className='flex justify-center text-[1.5rem] hover:text-sky-600'>Contact</li>
+          <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Home</li>
+          <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>About</li>
+          <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Skills</li>
+          <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Projects</li>
+          <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Contact</li>
         </ul>
       </div>
       {/* Navbar Ends Here */}
@@ -77,23 +77,23 @@ function App() {
       <div className='bg-cover h-screen' style={{ backgroundImage: `url(${b2})` }}>
         <div className='flex'>
         <div className='md:pl-20 md:pt-40 pt-5 pl-5 flex-col w-[65%]'>
-          <div className='md:text-[3rem] text-[2rem] text-[#000066] font-semibold'>Hi There,</div>
-          <div className='flex gap-2 flex-wrap'>
-            <div className='text-[2rem] md:text-[3rem] text-[#000066] font-semibold'>
+          <div className='md:text-[3rem] text-[2rem] text-[#000066] font-semibold font-mono'>Hi There,</div>
+          <div className='flex gap-3 flex-wrap'>
+            <div className='text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono'>
               I'm Abhinav
             </div>
-            <div className='md:text-[3rem] text-[2rem] text-[#ff9900] font-semibold'>
+            <div className='md:text-[3rem] text-[2rem] text-[#ff9900] font-semibold font-mono'>
               Mishra
             </div>
           </div>
           <div className='flex flex-wrap'>
-            <div className='text-[2rem] md:text-[3rem] text-[#000066] font-semibold'>
+            <div className='text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono'>
               I Am Into
             </div>
-            <div className='md:pl-4 text-[#ff9900] md:text-[3rem] text-[2rem] font-semibold'>{displayText}</div>
+            <div className='md:pl-4 text-[#ff9900] md:text-[3rem] text-[2rem] font-semibold font-mono'>{displayText}</div>
 
           </div>
-          <div className='mt-3'><button className='border-2 bg-[#000066] text-white px-5 py-3 text-[1.5rem] font-medium rounded-3xl'> About Me</button></div>
+          <div className='mt-3'><button className='border-2 bg-[#000066] text-white px-5 py-3 text-[1.5rem] font-medium rounded-3xl font-mono' > About Me</button></div>
           <div className='gap-4 mt-4 flex'>
             <div>  <a href="https://www.linkedin.com/in/abhinav-mishra-b95301258/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={42} /> {/* Adjust the size as needed */}
