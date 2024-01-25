@@ -2,8 +2,9 @@
  import { useState } from "react";
  import { FaBars } from "react-icons/fa";
  import Symbol from '../assets/Symbol.png';
+ import { Link } from "react-router-dom";
  function Navbar () {
-    const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
     
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -14,7 +15,8 @@ return(
       <img src={Symbol} alt='Logo' />
     </div>
     <ul className='md:flex hidden gap-6  text-[1.5rem] font-semibold justify-center items-center'>
-      <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Home</li>
+       
+      <Link to='/'><li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Home</li></Link>
       <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>About</li>
       <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Skills</li>
       <li className='hover:underline hover:text-sky-600 cursor-pointer hover:underline-offset-8 font-mono'>Projects</li>
@@ -24,7 +26,7 @@ return(
       <FaBars size="1.5em" />
     </div>
     <ul className={`lg:hidden ${showMenu ? "flex-col" : "hidden"} flex-col justify-center items-center absolute w-full top-20 right-0 bg-white border-2 border-sky-600`}>
-      <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Home</li>
+      <Link to='/'><li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Home</li></Link>
       <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>About</li>
       <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Skills</li>
       <li className='flex justify-center text-[1.5rem] hover:text-sky-600 font-mono'>Projects</li>
