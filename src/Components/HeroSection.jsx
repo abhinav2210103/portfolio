@@ -13,8 +13,15 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section bg-cover h-auto">
-      <div className="pt-10 md:hidden flex justify-center" onClick={handleImageClick}>
-        <img src={isHero2 ? hero4 : hero} className="rounded-full" style={{ height: 200, width: 200 }} />
+      <div
+        className="pt-10 md:hidden flex justify-center"
+        onClick={handleImageClick}
+      >
+        <img
+          src={isHero2 ? hero4 : hero}
+          className="rounded-full"
+          style={{ height: 200, width: 200 }}
+        />
       </div>
 
       <div className="flex md:ml-5">
@@ -23,11 +30,17 @@ const HeroSection = () => {
             Hi There,
           </div>
           <div className="flex md:gap-3 gap-2 flex-wrap">
-            <div className="text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono">I'm Abhinav</div>
-            <div className="md:text-[3rem] text-[2rem] text-[#ff9900] font-semibold font-mono">Mishra</div>
+            <div className="text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono">
+              I'm Abhinav
+            </div>
+            <div className="md:text-[3rem] text-[2rem] text-[#ff9900] font-semibold font-mono">
+              Mishra
+            </div>
           </div>
           <div className="md:flex flex-wrap">
-            <div className="text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono mr-10 md:mr-0">I Am Into</div>
+            <div className="text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono mr-10 md:mr-0">
+              I Am Into
+            </div>
             <span className="w-50 overflow-hidden">
               <span className="md:pl-4 text-[#ff9900] md:text-[3rem] text-[2rem] font-semibold font-mono">
                 <Typewriter
@@ -44,66 +57,62 @@ const HeroSection = () => {
           </div>
           <div>
             <a
-              href="/Abhinav_Resume.pdf"
-              download
+              href="https://drive.google.com/file/d/1FdjlJo7LX2NAoSbOVNUzHOh5ZdDJnTr4/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-2 bg-[#000066] text-white px-5 py-3 text-[1.5rem] font-medium rounded-3xl font-mono inline-block"
-              onClick={(e) => {
-                e.preventDefault();
-                window.open("/Abhinav_Resume.pdf", "_blank");
-                setTimeout(() => {
-                  const link = document.createElement("a");
-                  link.href = "/Abhinav_Resume.pdf";
-                  link.setAttribute("download", "Abhinav_Resume.pdf");
-                  document.body.appendChild(link);
-                  link.click();
-                  link.remove();
-                }, 1000);
-              }}
             >
               Resume
             </a>
             <div className="gap-4 mt-4 flex">
-        <div>
-          <a
-            href="https://www.linkedin.com/in/abhinav-mishra-b95301258/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={42} />
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://www.instagram.com/abhinav_mishra29"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram size={42} />
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://github.com/abhinav2210103"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size={42} />
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://twitter.com/abhinavetw"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter size={42} />
-          </a>
-        </div>
-      </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/abhinav-mishra-b95301258/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={42} />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.instagram.com/abhinav_mishra29"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={42} />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/abhinav2210103"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={42} />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://twitter.com/abhinavetw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter size={42} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex-col pt-10 md:flex hidden" onClick={handleImageClick}>
-          <img src={isHero2 ? hero4 : hero} className="rounded-full" style={{ height: 500 }} />
+        <div
+          className="flex-col pt-10 md:flex hidden"
+          onClick={handleImageClick}
+        >
+          <img
+            src={isHero2 ? hero4 : hero}
+            className="rounded-full"
+            style={{ height: 500 }}
+          />
         </div>
       </div>
     </div>

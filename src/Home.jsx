@@ -6,12 +6,14 @@ import SkillsSection from "./Components/SkillsSection";
 import ProjectsSection from "./Components/ProjectsSection";
 import ContactSection from "./Components/ContactSection";
 import b2 from "./assets/b2.gif";
+import ExperienceSection from "./Components/ExperienceSection";
 
 const Home = () => {
   const aboutSectionRef = React.useRef(null);
   const skillsSectionRef = React.useRef(null);
   const projectsSectionRef = React.useRef(null);
   const contactSectionRef = React.useRef(null);
+  const experienceSectionRef = React.useRef(null);
 
   const scrollToSection = (section) => {
     if (section === "about") {
@@ -22,6 +24,8 @@ const Home = () => {
       projectsSectionRef.current.scrollIntoView({ behavior: "smooth" });
     } else if (section == "contact") {
       contactSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (section == "experience") {
+      experienceSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -32,6 +36,7 @@ const Home = () => {
         <HeroSection />
         <div className="flex flex-col justify-center items-center">
           <AboutSection ref={aboutSectionRef} />
+          <ExperienceSection ref={experienceSectionRef} />
           <SkillsSection ref={skillsSectionRef} />
           <ProjectsSection ref={projectsSectionRef} />
           <ContactSection ref={contactSectionRef} />
