@@ -58,7 +58,7 @@ const ExperienceSection = React.forwardRef((_, ref) => (
               className="w-full aspect-video overflow-hidden rounded-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
             >
               <img
-                src="src/assets/dailywellnesscertificate.png"
+                src="public/assets/dailywellnesscertificate.png"
                 alt="Internship Certificate"
                 className="w-full h-full object-cover"
               />
@@ -87,7 +87,7 @@ const ExperienceSection = React.forwardRef((_, ref) => (
               className="w-full aspect-video overflow-hidden rounded-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
             >
               <img
-                src="src/assets/dailywellness.png"
+                src="public/assets/dailywellness.png"
                 alt="Website Preview"
                 className="w-full h-full object-cover"
               />
@@ -139,7 +139,7 @@ const ExperienceSection = React.forwardRef((_, ref) => (
             className="w-full aspect-video overflow-hidden rounded-md border border-gray-200 transform transition-transform duration-300 hover:scale-105"
           >
             <img
-              src="src/assets/floo.png"
+              src="public/assets/floo.png"
               alt="Website Preview"
               className="w-full h-full object-cover"
             />

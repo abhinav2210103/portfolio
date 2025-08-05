@@ -5,7 +5,7 @@ import AboutSection from "./Components/AboutSection";
 import SkillsSection from "./Components/SkillsSection";
 import ProjectsSection from "./Components/ProjectsSection";
 import ContactSection from "./Components/ContactSection";
-import b2 from "./assets/b2.gif";
+// import b2 from "./assets/b2.gif";
 import ExperienceSection from "./Components/ExperienceSection";
 
 const Home = () => {

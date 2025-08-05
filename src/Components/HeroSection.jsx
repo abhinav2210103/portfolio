@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import hero from "../assets/hero.png";
-import hero4 from "../assets/hero3.png";
+import hero from "../../public/assets/hero.png";
+import hero3 from "../../public/assets/hero3.png";
 import { FaLinkedin, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
 
 const HeroSection = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import Symbol from "../assets/Symbol.png";
+import Symbol from "../../public/assets/symbol.png"; 
 import { Link } from "react-router-dom";
 
 function Navbar({ scrollToSection }) {
