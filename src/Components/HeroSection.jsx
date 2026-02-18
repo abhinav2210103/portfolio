@@ -1,121 +1,191 @@
-import React, { useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
-import hero from "../../public/assets/hero.png";
-import hero3 from "../../public/assets/hero3.png";
-import { FaLinkedin, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
+import React from "react";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const HeroSection = () => {
-  const [isHero2, setIsHero2] = useState(false);
-
-  const handleImageClick = () => {
-    setIsHero2((prev) => !prev);
-  };
-
   return (
-    <div className="hero-section bg-cover h-auto">
-      <div
-        className="pt-10 md:hidden flex justify-center"
-        onClick={handleImageClick}
-      >
-        <img
-          src={isHero2 ? hero4 : hero}
-          className="rounded-full"
-          style={{ height: 200, width: 200 }}
-        />
-      </div>
-
-      <div className="flex md:ml-5">
-        <div className="md:pl-20 md:pt-28 pt-5 pl-5 flex-col md:w-[65%]">
-          <div className="md:text-[3rem] text-[2rem] text-[#000066] font-semibold font-mono">
-            Hi There,
-          </div>
-          <div className="flex md:gap-3 gap-2 flex-wrap">
-            <div className="text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono">
-              I'm Abhinav
-            </div>
-            <div className="md:text-[3rem] text-[2rem] text-[#ff9900] font-semibold font-mono">
-              Mishra
-            </div>
-          </div>
-          <div className="md:flex flex-wrap">
-            <div className="text-[2rem] md:text-[3rem] text-[#000066] font-semibold font-mono mr-10 md:mr-0">
-              I Am Into
-            </div>
-            <span className="w-50 overflow-hidden">
-              <span className="md:pl-4 text-[#ff9900] md:text-[3rem] text-[2rem] font-semibold font-mono">
-                <Typewriter
-                  words={["Web Development", "Competitive Coding"]}
-                  loop={0}
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={130}
-                  deleteSpeed={100}
-                  delaySpeed={1000}
-                />
-              </span>
-            </span>
-          </div>
+    <section className="w-full px-6 md:px-16 py-20 font-sans">
+      <div className="w-full max-w-6xl mx-auto">
+        {/* ✅ Two Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          {/* ================= LEFT SIDE ================= */}
           <div>
-            <a
-              href="https://drive.google.com/file/d/1FdjlJo7LX2NAoSbOVNUzHOh5ZdDJnTr4/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 bg-[#000066] text-white px-5 py-3 text-[1.5rem] font-medium rounded-3xl font-mono inline-block"
-            >
-              Resume
-            </a>
-            <div className="gap-4 mt-4 flex">
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/abhinav-mishra-b95301258/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={42} />
-                </a>
+            {/* Hello */}
+            <p className="text-blue-500 text-sm md:text-base font-medium tracking-[0.18em] uppercase">
+              Hello, World!
+            </p>
+
+            {/* Name */}
+            <h1 className="mt-4 text-[2.1rem] md:text-[2rem] text-white tracking-tight leading-tight">
+              I&apos;m Abhinav Mishra{" "}
+              <span className="inline-block translate-y-[2px]">👋</span>
+            </h1>
+
+            {/* Big line */}
+            <h2 className="mt-8 text-[2.6rem] md:text-[3rem] leading-[1.05] font-light text-zinc-100 tracking-tight">
+              Software Developer.
+              <br className="hidden md:block" />
+              Problem Solver. Builder.
+            </h2>
+
+            {/* Ownership */}
+            <p className="mt-10 text-zinc-400 text-base md:text-lg max-w-3xl leading-relaxed">
+              💡 I’ve worked in small startups/teams where I take strong
+              end-to-end ownership from building UI to shipping features in
+              production.
+            </p>
+
+            {/* Open to work */}
+            <div className="mt-10 text-zinc-300 text-base md:text-lg">
+              <p className="text-zinc-500">I’m open to new opportunities!</p>
+
+              <a
+                href="mailto:abhinavmishra0493@gmail.com"
+                className="mt-2 inline-block text-zinc-100 hover:text-blue-400 transition underline underline-offset-4 decoration-zinc-700"
+              >
+                abhinavmishra0493@gmail.com
+              </a>
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-12 flex flex-wrap gap-4">
+              <a
+                href="https://drive.google.com/file/d/1BwZ2f8-bYDQfDu6nvQPSVqC2H1-Eqboy/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 transition text-white font-medium shadow-lg shadow-blue-600/20 active:scale-[0.98]"
+              >
+                Resume
+              </a>
+
+              {/* <a
+                href=""
+                className="px-7 py-3 rounded-2xl border border-zinc-700 hover:border-zinc-500 transition text-zinc-200 font-medium active:scale-[0.98]"
+              >
+                View Projects
+              </a> */}
+            </div>
+
+            {/* Socials */}
+            <div className="mt-12 flex gap-6 text-zinc-500">
+              <a
+                href="https://www.linkedin.com/in/abhinavmishra0493/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+              >
+                <FaLinkedin size={26} />
+              </a>
+
+              <a
+                href="https://github.com/abhinav2210103"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                <FaGithub size={26} />
+              </a>
+
+              <a
+                href="https://twitter.com/abhinavetw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-sky-400 transition"
+              >
+                <FaTwitter size={26} />
+              </a>
+            </div>
+          </div>
+
+          {/* ================= RIGHT SIDE (CODDY TERMINAL) ================= */}
+          <div className="w-full">
+            <div className="relative rounded-3xl border border-zinc-800 bg-zinc-950/60 backdrop-blur-md shadow-2xl overflow-hidden">
+              {/* Top Bar */}
+              <div className="flex items-center gap-2 px-5 py-4 border-b border-zinc-800 bg-zinc-950/70">
+                <span className="h-3 w-3 rounded-full bg-red-500/90" />
+                <span className="h-3 w-3 rounded-full bg-yellow-500/90" />
+                <span className="h-3 w-3 rounded-full bg-green-500/90" />
+
+                <p className="ml-3 text-xs text-zinc-400 tracking-wide">
+                  zsh — abhinav@portfolio
+                </p>
               </div>
-              <div>
-                <a
-                  href="https://www.instagram.com/abhinav_mishra29"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram size={42} />
-                </a>
+
+              {/* Terminal Body */}
+              <div className="px-6 py-6 font-mono text-[13px] md:text-sm leading-relaxed">
+                <p className="text-zinc-600">
+                  # interactive shell • about session
+                </p>
+
+                <div className="mt-5 space-y-5">
+                  {/* whoami */}
+                  <div>
+                    <p className="text-zinc-200">
+                      <span className="text-emerald-400">abhinav@mac</span>{" "}
+                      <span className="text-zinc-500">~</span>{" "}
+                      <span className="text-zinc-400">%</span>{" "}
+                      <span className="text-white">whoami</span>
+                    </p>
+
+                    <p className="mt-2 text-zinc-300">
+                      Software Developer who optimize slow apps and make them{" "}
+                      <span className="text-sky-400 font-medium">fly</span>.
+                      Helping startups scale with high-performance{" "}
+                      <span className="text-sky-400 font-medium">
+                        web & mobile apps
+                      </span>
+                      .
+                    </p>
+                  </div>
+
+                  {/* stack */}
+                  <div>
+                    <p className="text-zinc-200">
+                      <span className="text-emerald-400">abhinav@mac</span>{" "}
+                      <span className="text-zinc-500">~</span>{" "}
+                      <span className="text-zinc-400">%</span>{" "}
+                      <span className="text-white">stack --show</span>
+                    </p>
+
+                    <p className="mt-2 text-zinc-300">
+                      React Native, Next.js, React.js, Node.js, Typescript, AWS,
+                      MongoDB, Express, Firebase, CI/CD.
+                    </p>
+                  </div>
+
+                  {/* interests */}
+                  <div>
+                    <p className="text-zinc-200">
+                      <span className="text-emerald-400">abhinav@mac</span>{" "}
+                      <span className="text-zinc-500">~</span>{" "}
+                      <span className="text-zinc-400">%</span>{" "}
+                      <span className="text-white">focus --now</span>
+                    </p>
+
+                    <p className="mt-2 text-zinc-300">
+                      <span className="text-sky-400 font-medium">
+                        Idea → Production
+                      </span>{" "}
+                      with true end-to-end ownership.
+                    </p>
+                  </div>
+
+                  {/* cursor */}
+                  <p className="text-zinc-200">
+                    <span className="text-emerald-400">abhinav@mac</span>{" "}
+                    <span className="text-zinc-500">~</span>{" "}
+                    <span className="text-zinc-400">%</span>{" "}
+                    <span className="inline-block w-2 h-4 bg-zinc-200/80 animate-pulse translate-y-[3px]" />
+                  </p>
+                </div>
               </div>
-              <div>
-                <a
-                  href="https://github.com/abhinav2210103"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={42} />
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://twitter.com/abhinavetw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter size={42} />
-                </a>
-              </div>
+
+              {/* Soft glow */}
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-blue-500/10 via-transparent to-emerald-500/10" />
             </div>
           </div>
         </div>
-        <div
-          className="flex-col pt-10 md:flex hidden"
-          onClick={handleImageClick}
-        >
-          <img
-            src={isHero2 ? hero4 : hero}
-            className="rounded-full"
-            style={{ height: 500 }}
-          />
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
