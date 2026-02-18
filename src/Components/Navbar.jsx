@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Symbol from "../../public/assets/symbol.png";
 
 function Navbar({ scrollToSection }) {
   const [open, setOpen] = useState(false);
@@ -15,7 +14,6 @@ function Navbar({ scrollToSection }) {
     { label: "Skills", target: "skills" },
     { label: "Projects", target: "projects" },
     { label: "Contact", target: "contact" },
- 
   ];
 
   return (
@@ -29,12 +27,13 @@ function Navbar({ scrollToSection }) {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-10 py-4">
         {/* Left Logo */}
+
         <div className="flex items-center">
-          <img
-            src={Symbol}
-            alt="Logo"
-            className="h-10 w-10 object-contain"
-          />
+          <div className="h-10 w-10 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center backdrop-blur-md">
+            <span className="text-white text-[22px] font-light tracking-[0.08em]">
+              A
+            </span>
+          </div>
         </div>
 
         {/* Center = Nothing */}
@@ -62,12 +61,10 @@ function Navbar({ scrollToSection }) {
                   {label}
                   <span className="absolute left-0 -bottom-2 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full" />
                 </button>
-              )
+              ),
             )}
           </nav>
-
-          {/* CTA Button */}
-        ÷
+          {/* CTA Button */}÷
         </div>
 
         {/* Burger (Mobile) */}
@@ -101,7 +98,7 @@ function Navbar({ scrollToSection }) {
                 >
                   {label}
                 </button>
-              )
+              ),
             )}
 
             {/* Mobile CTA */}
