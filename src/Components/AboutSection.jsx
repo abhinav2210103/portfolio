@@ -18,29 +18,34 @@ const AboutSection = React.forwardRef((props, ref) => {
           About Me
         </h2>
 
-        {/* Subtitle */}
+        {/* Description */}
         <div className="mt-10 max-w-4xl space-y-6 text-zinc-400 text-base md:text-lg leading-relaxed">
           <p>
             I’m a Computer Science undergraduate at{" "}
             <span className="text-zinc-200 font-medium">
               Ajay Kumar Garg Engineering College
             </span>
-            , passionate about full-stack development and modern software
-            architecture — including backend, frontend, and cross-platform app
-            development.
+            , focused on building production-grade applications across mobile,
+            web, backend, and AI systems.
           </p>
 
           <p>
-            Over the past year, I’ve worked in real-world production
-            environments where I contributed to the full development lifecycle —
-            from building responsive UIs and scalable backend systems to
-            deploying on cloud infrastructure like{" "}
-            <span className="text-zinc-200">AWS</span> and optimizing
-            performance.
+            I’ve independently built and deployed React Native applications to
+            the Play Store, engineered scalable backend systems, and developed
+            robust, performance-driven frontends. I enjoy owning the full
+            development lifecycle — from architecture and implementation to
+            deployment and optimization.
           </p>
 
           <p>
-            Outside of development, I enjoy diving into{" "}
+            My recent work involves integrating AI-powered features including
+            LLM workflows, speech-to-text (STT), text-to-speech (TTS), and
+            intelligent search systems. I focus on building systems that are not
+            just intelligent, but fast, reliable, and developer-friendly.
+          </p>
+
+          <p>
+            Outside of development, I actively practice{" "}
             <span className="text-zinc-200 font-medium">
               Data Structures & Algorithms
             </span>{" "}
