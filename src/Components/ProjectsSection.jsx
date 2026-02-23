@@ -3,7 +3,10 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectsSection = React.forwardRef((_, ref) => {
   return (
-    <section ref={ref} className="relative w-full px-6 md:px-16 py-20 font-sans">
+    <section
+      ref={ref}
+      className="relative w-full px-6 md:px-16 py-20 font-sans"
+    >
       <div className="w-full max-w-6xl mx-auto">
         {/* Label */}
         <p className="text-blue-500 text-sm md:text-base font-medium tracking-[0.18em] uppercase">
@@ -17,8 +20,8 @@ const ProjectsSection = React.forwardRef((_, ref) => {
 
         {/* Subtitle */}
         <p className="mt-6 max-w-3xl text-zinc-400 text-base md:text-lg leading-relaxed">
-          A few projects where I built real products with performance, scalability,
-          and clean architecture in mind.
+          A few projects where I built real products with performance,
+          scalability, and clean architecture in mind.
         </p>
 
         {/* Projects Grid */}
@@ -78,6 +81,28 @@ const ProjectsSection = React.forwardRef((_, ref) => {
               {
                 label: "GitHub",
                 href: "https://github.com/abhinav2210103/Edumarshal_web",
+                icon: <FaGithub />,
+              },
+            ]}
+          />
+          {/* Julius AI */}
+          <ProjectCard
+            title="Julius AI"
+            stack="AI Technical Interview Platform | Next.js 14, TypeScript, Node.js, WebSockets, MongoDB, Redis"
+            bullets={[
+              `Architected and built an AI-powered end-to-end technical interview platform with a deterministic 6-stage conversational state machine and separate coding evaluation system.`,
+              `Implemented real-time voice interviews using WebSocket streaming with Deepgram (STT) and ElevenLabs (TTS), enabling low-latency conversational AI interaction.`,
+              `Delivered detailed hiring recommendations with actionable feedback, recruiter dashboards, and historical analytics powered by MongoDB persistence.`,
+            ]}
+            links={[
+              {
+                label: "Demo",
+                href: "https://your-demo-link.com",
+                icon: <FaExternalLinkAlt />,
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/your-repo-link",
                 icon: <FaGithub />,
               },
             ]}

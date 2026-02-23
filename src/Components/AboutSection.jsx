@@ -7,101 +7,116 @@ const AboutSection = React.forwardRef((props, ref) => {
       id="about"
       className="w-full px-6 md:px-16 py-20 font-sans"
     >
-      <div className="w-full max-w-6xl mx-auto">
-        {/* Section label */}
-        <p className="text-blue-500 text-sm md:text-base font-medium tracking-[0.18em] uppercase">
-          About
-        </p>
-
-        {/* Title */}
-        <h2 className="mt-4 text-[2.2rem] md:text-[3rem] font-semibold text-white tracking-tight leading-tight">
-          About Me
-        </h2>
-
-        {/* Description */}
-        <div className="mt-10 max-w-4xl space-y-6 text-zinc-400 text-base md:text-lg leading-relaxed">
-          <p>
-            I’m a Computer Science undergraduate at{" "}
-            <span className="text-zinc-200 font-medium">
-              Ajay Kumar Garg Engineering College
-            </span>
-            , focused on building production-grade applications across mobile,
-            web, backend, and AI systems.
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center items-center gap-16">
+        
+        {/* LEFT CONTENT */}
+        <div className="md:w-[58%] w-full">
+          {/* Section label */}
+          <p className="text-blue-500 text-sm font-medium tracking-[0.18em] uppercase">
+            About
           </p>
 
-          <p>
-            I’ve independently built and deployed React Native applications to
-            the Play Store, engineered scalable backend systems, and developed
-            robust, performance-driven frontends. I enjoy owning the full
-            development lifecycle — from architecture and implementation to
-            deployment and optimization.
-          </p>
+          {/* Title */}
+          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-white leading-tight">
+            About Me
+          </h2>
 
-          <p>
-            My recent work involves integrating AI-powered features including
-            LLM workflows, speech-to-text (STT), text-to-speech (TTS), and
-            intelligent search systems. I focus on building systems that are not
-            just intelligent, but fast, reliable, and developer-friendly.
-          </p>
+          {/* Description */}
+          <div className="mt-6 max-w-2xl space-y-6 text-zinc-400 text-base md:text-lg leading-relaxed">
+            <p>
+              I’m a Computer Science undergraduate at{" "}
+              <span className="text-zinc-200 font-medium">
+                Ajay Kumar Garg Engineering College
+              </span>
+              , building production-grade applications across mobile, web,
+              backend, and AI systems.
+            </p>
 
-          <p>
-            Outside of development, I actively practice{" "}
-            <span className="text-zinc-200 font-medium">
-              Data Structures & Algorithms
-            </span>{" "}
-            and competitive programming, having solved{" "}
-            <span className="text-zinc-200 font-medium">300+ problems</span>{" "}
-            across platforms like LeetCode and Codeforces.
-          </p>
+            <p>
+              I’ve built and deployed React Native apps to the Play Store,
+              engineered scalable backend systems, and developed
+              performance-driven frontends while owning the full lifecycle.
+            </p>
+
+            <p>
+              Recently, I’ve worked on AI-powered features including LLM
+              workflows, STT, TTS, and intelligent search systems — focusing on
+              speed, reliability, and clean architecture.
+            </p>
+
+            <p>
+              I actively practice{" "}
+              <span className="text-zinc-200 font-medium">
+                Data Structures & Algorithms
+              </span>{" "}
+              with 300+ problems solved across coding platforms.
+            </p>
+          </div>
+
+          {/* Experience */}
+          <div className="mt-10 max-w-2xl space-y-4 text-zinc-400 text-base md:text-lg">
+            <p className="flex gap-3">
+              <span className="text-blue-500">•</span>
+              <span>
+                Ex - Application Developer Intern (React Native) at{" "}
+                <a
+                  href="https://www.gofloo.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
+                >
+                  GoFloo Tech Pvt Ltd
+                </a>
+              </span>
+            </p>
+
+            <p className="flex gap-3">
+              <span className="text-blue-500">•</span>
+              <span>
+                Ex - Full Stack Intern (Next.js, Node.js, AWS) at{" "}
+                <a
+                  href="https://dailywellness.ai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
+                >
+                  DailyWellness AI
+                </a>
+              </span>
+            </p>
+
+            <p className="flex gap-3">
+              <span className="text-blue-500">•</span>
+              <span>
+                Ex - AI Engineer at{" "}
+                <a
+                  href="https://www.ailifebot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
+                >
+                  AiLife Bot
+                </a>
+              </span>
+            </p>
+          </div>
         </div>
 
-        {/* Experience list */}
-        <div className="mt-12 max-w-3xl space-y-5 text-zinc-400 text-base md:text-lg leading-relaxed">
-          <p className="flex gap-4">
-            <span className="text-blue-500 mt-[2px]">•</span>
-            <span>
-              Ex - Application Developer Intern (React Native) at{" "}
-              <a
-                href="https://www.gofloo.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-8 text-zinc-200 decoration-zinc-700 hover:text-white transition"
-              >
-                GoFloo Tech Pvt Ltd (India Remote)
-              </a>
-            </span>
-          </p>
+        {/* RIGHT IMAGE */}
+        <div className="md:w-[42%] w-full flex justify-center md:justify-end">
+          <div className="relative group w-72 h-72 md:w-80 md:h-80">
+            <img
+              src="/Abhi.jpg"
+              alt="Abhinav Mishra"
+              className="w-full h-full object-cover rounded-2xl 
+                         grayscale group-hover:grayscale-0 
+                         transition duration-500 ease-in-out"
+            />
 
-          <p className="flex gap-4">
-            <span className="text-blue-500 mt-[2px]">•</span>
-            <span>
-              Ex - Full Stack Intern (Next.js, Node.js, TypeScript, AWS) at{" "}
-              <a
-                href="https://dailywellness.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-8 text-zinc-200 decoration-zinc-700 hover:text-white transition"
-              >
-                DailyWellness AI (US Remote)
-              </a>
-            </span>
-          </p>
-
-          <p className="flex gap-4">
-            <span className="text-blue-500 mt-[2px]">•</span>
-            <span>
-              Ex - AI Engineer at{" "}
-              <a
-                href="https://www.ailifebot.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-8 text-zinc-200 decoration-zinc-700 hover:text-white transition"
-              >
-                AiLife Bot (India Remote)
-              </a>
-            </span>
-          </p>
+            <div className="absolute inset-0 rounded-2xl border border-zinc-700"></div>
+          </div>
         </div>
+
       </div>
     </section>
   );
