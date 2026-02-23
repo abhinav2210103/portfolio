@@ -14,6 +14,7 @@ function Navbar({ scrollToSection }) {
     { label: "Skills", target: "skills" },
     { label: "Projects", target: "projects" },
     { label: "Contact", target: "contact" },
+    {label: "Society", target: "society" },
   ];
 
   return (

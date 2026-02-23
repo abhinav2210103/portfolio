@@ -54,10 +54,10 @@ const Home = () => {
           <ExperienceSection ref={experienceSectionRef} />
 
           {/* ✅ NEW SECTION */}
-          {/* <SocietySection ref={societySectionRef} /> */}
 
           <SkillsSection ref={skillsSectionRef} />
           <ProjectsSection ref={projectsSectionRef} />
+          <SocietySection ref={societySectionRef} />
           <ContactSection ref={contactSectionRef} />
         </div>
       </div>
