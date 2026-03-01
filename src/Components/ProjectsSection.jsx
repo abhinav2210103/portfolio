@@ -50,6 +50,22 @@ const ProjectsSection = React.forwardRef((_, ref) => {
 
           {/* Opinio */}
           <ProjectCard
+            title="Julius AI"
+            stack="AI Technical Interview Platform | Next.js 14, TypeScript, Node.js, WebSockets, MongoDB, Redis"
+            bullets={[
+              `Architected and built an AI-powered end-to-end technical interview platform with a deterministic 6-stage conversational state machine and separate coding evaluation system.`,
+              `Implemented real-time voice interviews using WebSocket streaming with Deepgram (STT) and ElevenLabs (TTS), enabling low-latency conversational AI interaction.`,
+              `Delivered detailed hiring recommendations with actionable feedback, recruiter dashboards, and historical analytics powered by MongoDB persistence.`,
+            ]}
+            links={[
+              {
+                label: "GitHub",
+                href: "https://github.com/abhinav2210103/julius_ai",
+                icon: <FaGithub />,
+              },
+            ]}
+          />
+          <ProjectCard
             title="Opinio"
             stack="Node.js, Express, MongoDB, Redis, AWS EC2, React Native, Expo"
             bullets={[
@@ -86,27 +102,7 @@ const ProjectsSection = React.forwardRef((_, ref) => {
             ]}
           />
           {/* Julius AI */}
-          <ProjectCard
-            title="Julius AI"
-            stack="AI Technical Interview Platform | Next.js 14, TypeScript, Node.js, WebSockets, MongoDB, Redis"
-            bullets={[
-              `Architected and built an AI-powered end-to-end technical interview platform with a deterministic 6-stage conversational state machine and separate coding evaluation system.`,
-              `Implemented real-time voice interviews using WebSocket streaming with Deepgram (STT) and ElevenLabs (TTS), enabling low-latency conversational AI interaction.`,
-              `Delivered detailed hiring recommendations with actionable feedback, recruiter dashboards, and historical analytics powered by MongoDB persistence.`,
-            ]}
-            links={[
-              {
-                label: "Demo",
-                href: "https://your-demo-link.com",
-                icon: <FaExternalLinkAlt />,
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/your-repo-link",
-                icon: <FaGithub />,
-              },
-            ]}
-          />
+          
         </div>
       </div>
     </section>
