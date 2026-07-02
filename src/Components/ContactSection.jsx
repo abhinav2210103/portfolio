@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub, FaTwitter, FaPhone } from "react-icons/fa";
 
 const ContactSection = React.forwardRef((_, ref) => {
   return (
@@ -22,6 +22,8 @@ const ContactSection = React.forwardRef((_, ref) => {
 
         {/* Card */}
         <div className="mt-10 rounded-3xl border border-zinc-800 bg-white/[0.03] p-8 md:p-10 shadow-lg shadow-black/20 backdrop-blur-md">
+          
+          {/* Social Icons */}
           <div className="flex justify-center gap-6 md:gap-10 flex-wrap">
             <SocialIcon
               href="https://www.linkedin.com/in/abhinav-mishra-b95301258/"
@@ -44,6 +46,18 @@ const ContactSection = React.forwardRef((_, ref) => {
               label="Twitter"
             />
           </div>
+
+          {/* Phone Number */}
+          <div className="mt-10 flex justify-center">
+            <a
+              href="tel:+918077539193"
+              className="flex items-center gap-3 text-zinc-300 text-lg hover:text-white transition"
+            >
+              <FaPhone className="text-blue-500" />
+              +91 8077539193
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -65,7 +79,6 @@ const SocialIcon = ({ href, icon, label }) => {
       aria-label={label}
       className="group relative flex items-center justify-center rounded-2xl border border-zinc-800 bg-white/[0.03] p-4 shadow-md shadow-black/20 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-zinc-700 hover:bg-white/[0.06]"
     >
-      {/* Glow */}
       <div className="absolute inset-0 rounded-2xl opacity-0 transition group-hover:opacity-100 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent pointer-events-none" />
 
       <div className="relative text-zinc-200 text-[28px] md:text-[32px] transition group-hover:text-white">
