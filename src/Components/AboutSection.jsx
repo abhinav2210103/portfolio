@@ -24,7 +24,7 @@ const AboutSection = React.forwardRef((props, ref) => {
           {/* Description */}
           <div className="mt-6 max-w-2xl space-y-6 text-zinc-400 text-base md:text-lg leading-relaxed">
             <p>
-              I’m a Computer Science undergraduate at{" "}
+              I’m a Computer Science graduate from{" "}
               <span className="text-zinc-200 font-medium">
                 Ajay Kumar Garg Engineering College
               </span>
@@ -58,6 +58,21 @@ const AboutSection = React.forwardRef((props, ref) => {
             <p className="flex gap-3">
               <span className="text-blue-500">•</span>
               <span>
+                SDE - Mobile & Backend at{" "}
+                <a
+                  href="https://driffle.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
+                >
+                  Driffle
+                </a>
+              </span>
+            </p>
+
+            <p className="flex gap-3">
+              <span className="text-blue-500">•</span>
+              <span>
                 Ex - Application Developer Intern (React Native) at{" "}
                 <a
                   href="https://www.gofloo.in/"
@@ -73,6 +88,21 @@ const AboutSection = React.forwardRef((props, ref) => {
             <p className="flex gap-3">
               <span className="text-blue-500">•</span>
               <span>
+                Ex - AI Engineer Intern at{" "}
+                <a
+                  href="https://www.ailifebot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
+                >
+                  AiLife Bot
+                </a>
+              </span>
+            </p>
+
+            <p className="flex gap-3">
+              <span className="text-blue-500">•</span>
+              <span>
                 Ex - Full Stack Intern (Next.js, Node.js, AWS) at{" "}
                 <a
                   href="https://dailywellness.ai/"
@@ -81,21 +111,6 @@ const AboutSection = React.forwardRef((props, ref) => {
                   className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
                 >
                   DailyWellness AI
-                </a>
-              </span>
-            </p>
-
-            <p className="flex gap-3">
-              <span className="text-blue-500">•</span>
-              <span>
-                Ex - AI Engineer at{" "}
-                <a
-                  href="https://www.ailifebot.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline underline-offset-4 text-zinc-200 hover:text-white transition"
-                >
-                  AiLife Bot
                 </a>
               </span>
             </p>
