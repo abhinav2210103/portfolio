@@ -39,7 +39,14 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                 <h3 className="text-xl md:text-2xl font-semibold text-white">
                   SDE-Mobile (React Native){" "}
                   <span className="text-zinc-500 font-medium">—</span>{" "}
-                  <span className="text-blue-400">Driffle</span>
+                  <a
+                    href="https://driffle.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                  >
+                    Driffle
+                  </a>
                 </h3>
 
                 <p className="mt-1 text-sm md:text-base text-zinc-500">
@@ -155,9 +162,14 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                 <h3 className="text-xl md:text-2xl font-semibold text-white">
                   Mobile Intern (React Native){" "}
                   <span className="text-zinc-500 font-medium">—</span>{" "}
-                  <span className="text-blue-400">
+                  <a
+                    href="https://www.gofloo.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                  >
                     GoFloo Tech Pvt Ltd (Floo)
-                  </span>
+                  </a>
                 </h3>
 
                 <p className="mt-1 text-sm md:text-base text-zinc-500">
@@ -291,6 +303,98 @@ const ExperienceSection = React.forwardRef((_, ref) => {
             </div>
           </div>
 
+          {/* =================== Ailifebot =================== */}
+          <div className="relative pl-8">
+            {/* Left timeline line + dot */}
+            <div className="absolute left-0 top-2 h-full w-[2px] bg-zinc-800" />
+            <div className="absolute left-[-6px] top-2 h-4 w-4 rounded-full bg-blue-500 shadow-[0_0_0_6px_rgba(59,130,246,0.12)]" />
+
+            {/* Content */}
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl md:text-2xl font-semibold text-white">
+                  AI Engineer Intern{" "}
+                  <span className="text-zinc-500 font-medium">—</span>{" "}
+                  <a
+                    href="https://www.ailifebot.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                  >
+                    Ailifebot
+                  </a>
+                </h3>
+
+                <p className="mt-1 text-sm md:text-base text-zinc-500">
+                  August 2025 – November 2025 · Remote
+                </p>
+              </div>
+
+              <div>
+                <p className="text-white font-medium text-base md:text-lg">
+                  Julius AI — AI Technical Interview Platform
+                </p>
+                <p className="mt-1 text-zinc-500 text-sm md:text-base">
+                  Next.js 14, TypeScript, Node.js, WebSockets, MongoDB, Redis
+                </p>
+              </div>
+
+              <ul className="space-y-3 text-zinc-400 text-base md:text-lg leading-relaxed">
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Architected and built an AI-powered end-to-end technical
+                    interview platform with a deterministic{" "}
+                    <span className="text-zinc-200">6-stage conversational state machine</span>{" "}
+                    and a separate coding evaluation system.
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Implemented real-time voice interviews using{" "}
+                    <span className="text-zinc-200">WebSocket streaming</span>{" "}
+                    with <span className="text-zinc-200">Deepgram (STT)</span> and{" "}
+                    <span className="text-zinc-200">ElevenLabs (TTS)</span>,
+                    enabling low-latency conversational AI interaction.
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Delivered detailed hiring recommendations with actionable
+                    feedback, recruiter dashboards, and historical analytics
+                    powered by <span className="text-zinc-200">MongoDB persistence</span>.
+                  </span>
+                </li>
+              </ul>
+
+              {/* Links row */}
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+                {/* Website */}
+                <a
+                  href="https://www.ailifebot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
+                >
+                  <p className="text-white font-medium text-base md:text-lg">
+                    🌐 Company Website
+                  </p>
+                  <p className="mt-2 text-zinc-500 text-sm md:text-base">
+                    Visit Ailifebot.
+                  </p>
+
+                  <p className="mt-4 text-blue-400 text-sm font-medium">
+                    Visit Website →
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* =================== Daily Wellness AI =================== */}
           <div className="relative pl-8">
             {/* Left timeline line + dot */}
@@ -303,11 +407,18 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                 <h3 className="text-xl md:text-2xl font-semibold text-white">
                   Full Stack Intern(Next.js ,Node.js ,AWS){" "}
                   <span className="text-zinc-500 font-medium">—</span>{" "}
-                  <span className="text-blue-400">Daily Wellness AI</span>
+                  <a
+                    href="https://dailywellness.ai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                  >
+                    Daily Wellness AI
+                  </a>
                 </h3>
 
                 <p className="mt-1 text-sm md:text-base text-zinc-500">
-                  March 2025 – June 2025 · US Remote
+                  March 2025 – July 2025 · US Remote
                 </p>
               </div>
 
