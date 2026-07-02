@@ -27,6 +27,122 @@ const ExperienceSection = React.forwardRef((_, ref) => {
 
         {/* Timeline */}
         <div className="mt-14 space-y-14">
+          {/* =================== Driffle (Current) =================== */}
+          <div className="relative pl-8">
+            {/* Left timeline line + dot */}
+            <div className="absolute left-0 top-2 h-full w-[2px] bg-zinc-800" />
+            <div className="absolute left-[-6px] top-2 h-4 w-4 rounded-full bg-emerald-500 shadow-[0_0_0_6px_rgba(16,185,129,0.12)]" />
+
+            {/* Content */}
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl md:text-2xl font-semibold text-white">
+                  SDE-Mobile (React Native){" "}
+                  <span className="text-zinc-500 font-medium">—</span>{" "}
+                  <span className="text-blue-400">Driffle</span>
+                </h3>
+
+                <p className="mt-1 text-sm md:text-base text-zinc-500">
+                  {/* TODO: confirm start date */}
+                  Feb 2026 – Present · India Remote
+                </p>
+              </div>
+
+              <ul className="space-y-3 text-zinc-400 text-base md:text-lg leading-relaxed">
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Managing the{" "}
+                    <span className="text-zinc-200">Driffle mobile application</span>{" "}
+                    with <span className="text-zinc-200">100K+ downloads</span>{" "}
+                    across Android and iOS.
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Implemented{" "}
+                    <span className="text-zinc-200">OTA (over-the-air) updates</span>{" "}
+                    for real-time app updates without Play Store / App Store
+                    review dependency.
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Added <span className="text-zinc-200">SSL pinning</span> and{" "}
+                    <span className="text-zinc-200">root/jailbreak detection</span>{" "}
+                    to harden app security.
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Optimized app performance using{" "}
+                    <span className="text-zinc-200">FlashList</span>, response
+                    caching, and{" "}
+                    <span className="text-zinc-200">TanStack Query</span> with
+                    an interaction manager for smoother UI.
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-blue-500 mt-[6px]">•</span>
+                  <span>
+                    Set up{" "}
+                    <span className="text-zinc-200">Firebase push notifications</span>{" "}
+                    alongside third-party platforms like{" "}
+                    <span className="text-zinc-200">MoEngage</span>.
+                  </span>
+                </li>
+              </ul>
+
+              {/* Links row */}
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+                {/* Playstore */}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.driffle.marketplace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
+                >
+                  <p className="text-white font-medium text-base md:text-lg">
+                    📱 Play Store
+                  </p>
+                  <p className="mt-2 text-zinc-500 text-sm md:text-base">
+                    Live on Google Play Store.
+                  </p>
+
+                  <p className="mt-4 text-blue-400 text-sm font-medium">
+                    View on Play Store →
+                  </p>
+                </a>
+
+                {/* App Store */}
+                <a
+                  href="https://apps.apple.com/in/app/driffle-marketplace/id6741839585"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
+                >
+                  <p className="text-white font-medium text-base md:text-lg">
+                    🍏 App Store
+                  </p>
+                  <p className="mt-2 text-zinc-500 text-sm md:text-base">
+                    Live on the Apple App Store.
+                  </p>
+
+                  <p className="mt-4 text-blue-400 text-sm font-medium">
+                    View on App Store →
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* =================== GoFloo Tech Pvt Ltd (Floo) =================== */}
           <div className="relative pl-8">
             {/* Left timeline line + dot */}
@@ -37,7 +153,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl md:text-2xl font-semibold text-white">
-                  Application Developer (React Native){" "}
+                  Mobile Intern (React Native){" "}
                   <span className="text-zinc-500 font-medium">—</span>{" "}
                   <span className="text-blue-400">
                     GoFloo Tech Pvt Ltd (Floo)
@@ -77,14 +193,6 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                     for real-time chat functionality.
                   </span>
                 </li>
-
-                {/* <li className="flex gap-3">
-                  <span className="text-blue-500 mt-[6px]">•</span>
-                  <span>
-                    Used <span className="text-zinc-200">Redux</span> for state
-                    management across screens and features.
-                  </span>
-                </li> */}
 
                 <li className="flex gap-3">
                   <span className="text-blue-500 mt-[6px]">•</span>
@@ -159,6 +267,26 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                     View on Play Store →
                   </p>
                 </a>
+
+                {/* App Store */}
+                <a
+                  href="https://apps.apple.com/in/app/floo-travel-companion-app/id6757790079"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
+                >
+                  <p className="text-white font-medium text-base md:text-lg">
+                    🍏 App Store
+                  </p>
+
+                  <p className="mt-2 text-zinc-500 text-sm md:text-base">
+                    Live on the Apple App Store.
+                  </p>
+
+                  <p className="mt-4 text-blue-400 text-sm font-medium">
+                    View on App Store →
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -173,7 +301,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl md:text-2xl font-semibold text-white">
-                  Full Stack Developer(Next.js ,Node.js ,AWS){" "}
+                  Full Stack Intern(Next.js ,Node.js ,AWS){" "}
                   <span className="text-zinc-500 font-medium">—</span>{" "}
                   <span className="text-blue-400">Daily Wellness AI</span>
                 </h3>
