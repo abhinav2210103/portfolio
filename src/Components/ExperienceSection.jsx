@@ -51,7 +51,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
 
                 <p className="mt-1 text-sm md:text-base text-zinc-500">
                   {/* TODO: confirm start date */}
-                  Feb 2026 – Present · India Remote
+                  Feb 2026 – Present · Gurugram India (Onsite)
                 </p>
               </div>
 
@@ -60,7 +60,9 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   <span className="text-blue-500 mt-[6px]">•</span>
                   <span>
                     Managing the{" "}
-                    <span className="text-zinc-200">Driffle mobile application</span>{" "}
+                    <span className="text-zinc-200">
+                      Driffle mobile application
+                    </span>{" "}
                     with <span className="text-zinc-200">100K+ downloads</span>{" "}
                     across Android and iOS.
                   </span>
@@ -69,10 +71,12 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                 <li className="flex gap-3">
                   <span className="text-blue-500 mt-[6px]">•</span>
                   <span>
-                    Implemented{" "}
-                    <span className="text-zinc-200">OTA (over-the-air) updates</span>{" "}
-                    for real-time app updates without Play Store / App Store
-                    review dependency.
+                    Implemented an end-to-end{" "}
+                    <span className="text-zinc-200">
+                      OTA (over-the-air) update system
+                    </span>{" "}
+                    across the backend and frontend, enabling real-time app
+                    updates without Play Store / App Store review dependency.
                   </span>
                 </li>
 
@@ -80,7 +84,9 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   <span className="text-blue-500 mt-[6px]">•</span>
                   <span>
                     Added <span className="text-zinc-200">SSL pinning</span> and{" "}
-                    <span className="text-zinc-200">root/jailbreak detection</span>{" "}
+                    <span className="text-zinc-200">
+                      root/jailbreak detection
+                    </span>{" "}
                     to harden app security.
                   </span>
                 </li>
@@ -100,7 +106,9 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   <span className="text-blue-500 mt-[6px]">•</span>
                   <span>
                     Set up{" "}
-                    <span className="text-zinc-200">Firebase push notifications</span>{" "}
+                    <span className="text-zinc-200">
+                      Firebase push notifications
+                    </span>{" "}
                     alongside third-party platforms like{" "}
                     <span className="text-zinc-200">MoEngage</span>.
                   </span>
@@ -117,7 +125,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
                 >
                   <p className="text-white font-medium text-base md:text-lg">
-                    📱 Play Store
+                    Play Store
                   </p>
                   <p className="mt-2 text-zinc-500 text-sm md:text-base">
                     Live on Google Play Store.
@@ -136,7 +144,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
                 >
                   <p className="text-white font-medium text-base md:text-lg">
-                    🍏 App Store
+                    App Store
                   </p>
                   <p className="mt-2 text-zinc-500 text-sm md:text-base">
                     Live on the Apple App Store.
@@ -260,7 +268,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
                 >
                   <p className="text-white font-medium text-base md:text-lg">
-                    📱 Play Store
+                    Play Store
                   </p>
 
                   <p className="mt-2 text-zinc-500 text-sm md:text-base">
@@ -288,7 +296,7 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition"
                 >
                   <p className="text-white font-medium text-base md:text-lg">
-                    🍏 App Store
+                    App Store
                   </p>
 
                   <p className="mt-2 text-zinc-500 text-sm md:text-base">
@@ -345,7 +353,9 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   <span>
                     Architected and built an AI-powered end-to-end technical
                     interview platform with a deterministic{" "}
-                    <span className="text-zinc-200">6-stage conversational state machine</span>{" "}
+                    <span className="text-zinc-200">
+                      6-stage conversational state machine
+                    </span>{" "}
                     and a separate coding evaluation system.
                   </span>
                 </li>
@@ -355,8 +365,8 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   <span>
                     Implemented real-time voice interviews using{" "}
                     <span className="text-zinc-200">WebSocket streaming</span>{" "}
-                    with <span className="text-zinc-200">Deepgram (STT)</span> and{" "}
-                    <span className="text-zinc-200">ElevenLabs (TTS)</span>,
+                    with <span className="text-zinc-200">Deepgram (STT)</span>{" "}
+                    and <span className="text-zinc-200">ElevenLabs (TTS)</span>,
                     enabling low-latency conversational AI interaction.
                   </span>
                 </li>
@@ -366,7 +376,8 @@ const ExperienceSection = React.forwardRef((_, ref) => {
                   <span>
                     Delivered detailed hiring recommendations with actionable
                     feedback, recruiter dashboards, and historical analytics
-                    powered by <span className="text-zinc-200">MongoDB persistence</span>.
+                    powered by{" "}
+                    <span className="text-zinc-200">MongoDB persistence</span>.
                   </span>
                 </li>
               </ul>
