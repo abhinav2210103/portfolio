@@ -49,7 +49,7 @@ const HeroSection = () => {
             {/* Buttons */}
             <div className="mt-12 flex flex-wrap gap-4">
               <a
-                href="https://drive.google.com/file/d/1BwZ2f8-bYDQfDu6nvQPSVqC2H1-Eqboy/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1hRA1k6bfeeC79DKzz9FCB1XHC_eJoGnl/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-7 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 transition text-white font-medium shadow-lg shadow-blue-600/20 active:scale-[0.98]"
